@@ -1,0 +1,31 @@
+First, create a Redux store and a reducer for the cart. The cart reducer should have an initial state with an empty cart array.
+
+Define an action type for adding an item to the cart and create an action creator function for that action. The action should have a payload that includes the item details (e.g., id, name, price, quantity, etc.).
+
+In the cart reducer, add a case for the ADD_TO_CART action. Check if the item already exists in the cart array. If it does, increase the quantity of that item by adding the new quantity to the existing quantity. Otherwise, add the new item to the cart array.
+
+Define an action type for removing an item from the cart and create an action creator function for that action. The action should have a payload that includes the item id.
+
+In the cart reducer, add a case for the REMOVE_FROM_CART action. Filter out the item with the matching id from the cart array.
+
+Define an action type for clearing the cart and create an action creator function for that action.
+
+In the cart reducer, add a case for the CLEAR_CART action. Set the cart array to an empty array.
+
+In the CartScreen component, import the cartReducer, the addToCartAction, and other necessary modules from Redux.
+
+Use the useSelector hook to get the cart state from the Redux store.
+
+Render the cart items in the component by mapping over the cartItems array from the cart state.
+
+Add an onClick event handler to the "Add to cart" button that dispatches the addToCartAction with the item details as the payload.
+
+Add an onClick event handler to the "Remove" button that dispatches the removeFromCartAction with the item id as the payload.
+
+Add an onClick event handler to the "Clear cart" button that dispatches the clearCartAction.
+
+Use the useEffect hook to store the cart data in local storage whenever the cart state changes.
+
+Use the useState hook to initialize the cart state with the data from local storage when the component mounts.
+
+That's it! With these steps, you should be able to create an add to cart feature using Redux and store data in local storage in MER

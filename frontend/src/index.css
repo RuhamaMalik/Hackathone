@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* //////////////////////  navbar*/
+/* .navbar{
+  z-index: 1 !important;
+} */
+.navbar-toggler-icon{
+  border: none !important;
+}
+.fs-2{
+  color: rgb(107, 205, 10);
+}
+.fs-3 , .nav-link{
+  color: rgba(28, 75, 184, 0.903) !important;
+}
+
+.z-index{
+  z-index: -1 !important;
+  top: 28% !important;
+  left: 30% !important;
+}
+.active{
+  color:  rgb(107, 205, 10) !important;
+  /* border-bottom: 2px solid  rgb(107, 205, 10) !important; */
+}
+.nav:hover{
+  background-color: rgba(220, 220, 220, 0.541);
+  box-shadow: 2px 2px  rgb(107, 205, 10);
+  margin-right: .4em;
+
+}
+.navbar-brand.active{
+  border:  none !important;
+}
+/* //////////////////////// product */
+
+h1{
+  font-size: 16px !important;
+}
+
+
+.flex-container{
+  display: flex !important;
+}
+
+
+select {
+  box-shadow:  none !important;
+  border-color: green !important;
+}
+
+/* cart //////////////// */
+
+h2{
+  font-size: 40px !important;
+  color: rgba(28, 75, 184, 0.903) !important;
+}
+
+.fa-plus{
+  color: green !important;
+  margin: 5px;
+}
+
+.fa-minus{
+  color: red !important;
+  margin: 5px;
+
+}
+
+.fa-trash{
+  color: red !important;
+
+}
+
+.fa-trash:hover{
+  border-radius: 50px;
+  background-color: rgba(220, 220, 220, 0.541);
+  box-shadow: 2px 2px  rgb(36, 43, 30);
+  padding: 16px;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------- Register screen */
+
+input{
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
