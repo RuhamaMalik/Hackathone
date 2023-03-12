@@ -1,9 +1,9 @@
 // 3.1
 import mongoose from 'mongoose';
+import dotenv from "dotenv";
+dotenv.config();
 
-const mongoUrl = "mongodb+srv://ruhama:fahad@authantication.zgl2b3q.mongodb.net/test";
-
-mongoose.connect(mongoUrl, {
+mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
